@@ -1,0 +1,32 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sideProfileContainer {
+  display: flex;
+}
+
+.centerProfile {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerProfile img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sideProfileContainer::after {
+    display: none;
+  }
+}
