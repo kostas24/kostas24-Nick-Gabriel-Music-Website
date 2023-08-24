@@ -1,28 +1,47 @@
 import React, { useState } from "react";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ musicSectionRef, socialSectionRef, eventsSectionRef }) => {
   const [isListVisible, setIsListVisible] = useState(false);
 
   const toggleListVisibility = () => {
     setIsListVisible(!isListVisible);
   };
 
+  const scrollToMusicSection = () => {
+    musicSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    toggleListVisibility();
+  };
+
+  const scrollToSocialSection = () => {
+    socialSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    toggleListVisibility();
+  };
+
+  const scrollToEventsSection = () => {
+    eventsSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    toggleListVisibility();
+  };
+
   return (
     <nav>
       <div className="navbar">
-        <img src="./images/nrglogo.png" alt="NRG Logo" style={{ width: 40 }} />
+        <img
+          src="./images/logowhite.png"
+          alt="NRG Logo"
+          style={{ width: 40 }}
+        />
         <div className="navbarBody">
           <div className="navbarContainer">
             <ul className={`navbarList ${isListVisible ? "visible" : ""}`}>
               <li>
-                <p>Music</p>
+                <p onClick={scrollToMusicSection}>Music</p>
               </li>
               <li>
-                <p>Events</p>
+                <p onClick={scrollToEventsSection}>Events</p>
               </li>
               <li>
-                <p>Socials</p>
+                <p onClick={scrollToSocialSection}>Social</p>
               </li>
             </ul>
           </div>

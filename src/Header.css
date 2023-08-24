@@ -15,9 +15,19 @@
   transform: translate(-50%, -50%);
 }
 
-.centerProfile img {
+.LogoImage {
   display: block;
   margin: 0 auto;
+  width: 80%;
+}
+
+.HeaderImages {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.HeaderImages:hover {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -28,5 +38,10 @@
 
   .sideProfileContainer::after {
     display: none;
+  }
+}
+@media (max-width: 992px) {
+  .LogoImage {
+    width: 60%;
   }
 }

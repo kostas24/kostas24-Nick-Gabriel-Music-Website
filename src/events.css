@@ -1,0 +1,57 @@
+/* Default image size for screens wider than 768px */
+.eventsImage {
+  width: 500px;
+  height: 500px;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.eventsImage:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 286px) {
+  .eventsImage {
+    width: 55px;
+    height: 55px;
+  }
+}
+/* Media query for extra small devices (phones) */
+@media (max-width: 576px) {
+  .eventsImage {
+    width: 90%;
+    height: 400px;
+  }
+}
+
+/* Media query for small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .eventsImage {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+/* Media query for medium devices (laptops and small desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .eventsImage {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+/* Media query for large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .eventsImage {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+/* Media query for extra large devices (large desktops and monitors) */
+@media (min-width: 1201px) {
+  .eventsImage {
+    width: 31%;
+    height: 520px;
+  }
+}

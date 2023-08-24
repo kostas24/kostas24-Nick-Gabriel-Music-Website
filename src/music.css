@@ -1,0 +1,69 @@
+/* Default image size for screens wider than 768px */
+.musicImage {
+  width: 500px;
+  height: 500px;
+  opacity: 1;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the bounce height */
+  }
+}
+
+/* Apply the animation on hover */
+.musicImage:hover {
+  animation: bounce 0.5s infinite; /* Apply the bounce animation */
+  opacity: 0.8;
+}
+
+@media (max-width: 286px) {
+  .musicImage {
+    width: 55px;
+    height: 55px;
+  }
+}
+/* Media query for extra small devices (phones) */
+@media (max-width: 576px) {
+  .musicImage {
+    width: 80%;
+    height: 50%;
+  }
+}
+
+/* Media query for small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .musicImage {
+    width: 80%;
+    height: 50%;
+  }
+}
+
+/* Media query for medium devices (laptops and small desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .musicImage {
+    width: 80%;
+    height: 50%;
+  }
+}
+
+/* Media query for large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .musicImage {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+/* Media query for extra large devices (large desktops and monitors) */
+@media (min-width: 1201px) {
+  .musicImage {
+    width: 31%;
+    height: 520px;
+  }
+}
