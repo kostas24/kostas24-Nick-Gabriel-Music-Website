@@ -23,6 +23,11 @@ li {
   margin-right: 35px;
   font-size: 26px;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+li:hover {
+  opacity: 0.6;
 }
 
 .navbarBody {
@@ -32,6 +37,7 @@ li {
 
 .menu-icon:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .menu-icon {
@@ -40,6 +46,7 @@ li {
   right: 0;
   margin-right: 10px;
   justify-content: center;
+  transition: opacity 0.3s;
 }
 
 .navbarContainer {
@@ -126,4 +133,65 @@ li {
   transform-origin: 5%;
   transform: rotate(-45deg);
   width: 41px;
+}
+
+.titles {
+  font-size: 24px;
+}
+.gabrielLogo {
+  width: 40px;
+}
+
+@media (max-width: 520px) {
+  li {
+    margin-right: 15px;
+  }
+  .titles {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 409px) {
+  .titles {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 370px) {
+  .titles {
+    font-size: 15px;
+  }
+  .gabrielLogo {
+    width: 35px;
+  }
+  li {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  .titles {
+    font-size: 14px;
+  }
+  li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 303px) {
+  .titles {
+    font-size: 13px;
+  }
+  li {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 274px) {
+  .titles {
+    font-size: 12px;
+  }
+  li {
+    margin-right: 3px;
+  }
 }

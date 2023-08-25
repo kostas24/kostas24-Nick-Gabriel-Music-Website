@@ -29,19 +29,25 @@ const Navbar = ({ musicSectionRef, socialSectionRef, eventsSectionRef }) => {
         <img
           src="./images/logowhite.png"
           alt="NRG Logo"
-          style={{ width: 40 }}
+          className="gabrielLogo"
         />
         <div className="navbarBody">
           <div className="navbarContainer">
             <ul className={`navbarList ${isListVisible ? "visible" : ""}`}>
               <li>
-                <p onClick={scrollToMusicSection}>Music</p>
+                <p className="titles" onClick={scrollToMusicSection}>
+                  Music
+                </p>
               </li>
               <li>
-                <p onClick={scrollToEventsSection}>Events</p>
+                <p className="titles" onClick={scrollToEventsSection}>
+                  Events
+                </p>
               </li>
               <li>
-                <p onClick={scrollToSocialSection}>Social</p>
+                <p className="titles" onClick={scrollToSocialSection}>
+                  Socials
+                </p>
               </li>
             </ul>
           </div>
