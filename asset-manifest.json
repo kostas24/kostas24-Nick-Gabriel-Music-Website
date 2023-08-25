@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kostas24-Nick-Gabriel-Music-Website/static/css/main.42a09525.css",
-    "main.js": "/kostas24-Nick-Gabriel-Music-Website/static/js/main.7b97c30a.js",
+    "main.js": "/kostas24-Nick-Gabriel-Music-Website/static/js/main.a76eb029.js",
     "index.html": "/kostas24-Nick-Gabriel-Music-Website/index.html",
     "main.42a09525.css.map": "/kostas24-Nick-Gabriel-Music-Website/static/css/main.42a09525.css.map",
-    "main.7b97c30a.js.map": "/kostas24-Nick-Gabriel-Music-Website/static/js/main.7b97c30a.js.map"
+    "main.a76eb029.js.map": "/kostas24-Nick-Gabriel-Music-Website/static/js/main.a76eb029.js.map"
   },
   "entrypoints": [
     "static/css/main.42a09525.css",
-    "static/js/main.7b97c30a.js"
+    "static/js/main.a76eb029.js"
   ]
 }
